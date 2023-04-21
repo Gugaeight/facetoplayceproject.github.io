@@ -9,13 +9,12 @@ body {
     font-size: 16px;
 }
 
-
-.container
+.container {
+    max-width: 100%;
+}
 
 .header {
-    background: url(img/map.png)
-    
-
+    background: url(img/map.png);
     
 }
 
@@ -137,7 +136,7 @@ body {
 .header__but {
     text-align: center;
     margin-top: 32px;
-    padding-bottom: 79.2px;
+    padding-bottom: 6%;
 }
 
 .header__but_body {
@@ -161,6 +160,7 @@ body {
 .content {
     background-color: #0A0911;
     text-align: center;
+    min-width: 40%;
 }
 
 /* CAN */
@@ -359,39 +359,8 @@ body {
 
 .content__text_reviews {
     margin-top: 200px;
-}
-
-.content__cards_reviews {
-    display: flex;
-    justify-content: center;
-}
-
-.reviews__cards_first {
-    width:263.33px ;
-    height:344.67px ;
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='29' ry='29' stroke='white' stroke-width='2' stroke-dasharray='16%2c 8' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
-    border-radius: 29px;
-}
-
-.reviews__cards_two {
-    width:328px ;
-    height:160px ;
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='29' ry='29' stroke='white' stroke-width='2' stroke-dasharray='16%2c 8' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
-    border-radius: 29px;
-}
-
-.reviews__cards_three {
-    width:331.33px ;  
-    height:160px ;  
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='29' ry='29' stroke='white' stroke-width='2' stroke-dasharray='16%2c 8' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
-    border-radius: 29px;
-}
-
-.reviews__cards_end {
-    width:682.67px ; 
-    height:160px ;   
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='29' ry='29' stroke='white' stroke-width='2' stroke-dasharray='16%2c 8' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
-    border-radius: 29px;
+    margin-bottom: 28px;
+    min-width: 100%;
 }
 
 .reviews__cards_body {
@@ -400,4 +369,180 @@ body {
     font-weight: 600;
     font-size: 18px;
     line-height: 127.5%;    
+    color: white;
+    text-align: left;
+    margin-left: 27px;
+    margin-top: 21.2px;
+    
+}
+
+.reviews__img {
+    max-width: 50%;
+    float: left;
+    margin-left: 26.67px;
+    margin-top: 16px;
+    
+}
+
+.reviews__picture {
+    
+}
+
+.reviews__star-girl {
+    margin-top: -28px;
+    max-width: 100%;
+}
+
+.reviews__blond-girl {
+    float: right;
+    margin-top: -30%;
+    margin-right: -5%;
+    max-width: 50%;
+}
+
+.reviews__hijab-girl {
+    float: right;
+    margin-top: -9%;
+    margin-right: 5%;
+    max-width: 33%;
+}
+
+.reviews__stars {
+    max-width: 24.62%;
+    margin-top: -5%;
+    float: right;
+}
+
+.reviews__orange-girl {
+    max-width: 19.8%;
+    margin-top: -5%;
+    float: right;
+}
+
+.reviews__img_margin {
+    text-align: left;
+    margin-top: 66px;
+    margin-left: 27.67px;
+    font-family: 'Inter',serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 166%; 
+    color: rgba(255, 255, 255, 0.8);   
+}
+
+.container__cards_reviews {
+    margin-left: 12%;
+    margin-right: 5%;
+    height: 361px;
+  } 
+.a,
+.b,
+.c,
+.d {
+    margin-right: 16px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='29' ry='29' stroke='white' stroke-width='2' stroke-dasharray='16%2c 8' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+    border-radius: 29px;
+    float: left;
+    margin-right: 24px;
+  }
+  
+  .a {
+    width: 23.96%;
+    height: 334px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='29' ry='29' stroke='white' stroke-width='2' stroke-dasharray='16%2c 8' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e"), url(img/bg-lady.png);
+    border-radius: 29px;
+
+  }
+  
+  .b {
+    width: 33%;
+    height: 160px;
+    background-color: #120E2A;
+  }
+  
+  .c {
+    width: 33%;
+    height: 160px;
+    background-color: #120E2A;
+    margin-right: -16px;
+
+  }
+  
+  .break {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 16px;
+  }
+  
+  .d {
+    width: calc(66% + 10px);
+    height: 160px;
+    background-color: #120E2A;
+    
+  }
+
+.content__citys {
+    margin-top: 200px;
+}
+
+.content__citys_body {
+    font-family: 'Inter',serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 121.47%;
+}
+
+.content__citys_cards {
+    float: left;
+    margin-left: 6%;
+}
+
+.citys__cards_first,
+.citys__cards_two,
+.citys__cards_three,
+.citys__cards_end {
+    float: left;
+    margin-top: 28px;
+    width: 262px;
+    height: 58.67px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='white' stroke-width='2' stroke-dasharray='16%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 16px;
+    background-color: #120E2A;
+    border: 0px;
+    
+}
+
+.citys__cards_first {
+    margin-right: 24px;
+}
+
+.citys__cards_two {
+    margin-right: 24px;
+}
+
+.citys__cards_three {
+    margin-right: 24px;  
+}
+
+.citys__cards_end {
+
+}
+
+.citys__cards_body {
+    background: url(img/white-point.png) left center no-repeat;
+}
+
+.citys__cards_body-text {
+    padding-left: 30px;
+    font-family: 'Inter',serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+        
+}
+
+.clear {
+    clear: both;
 }

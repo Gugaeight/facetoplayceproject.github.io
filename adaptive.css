@@ -1,6 +1,10 @@
 @media only screen and (max-width: 1280px) {
     .header {
-        width: 1280px;
+      width: 1280px;
+    }
+    .content__cards_reviews {
+      text-align: center;
+      width: 970.67px;
     }
 }
 
