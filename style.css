@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -14,14 +19,32 @@ ul {
     list-style: none;
 }
 
+
 .container {
-    max-width: 100%;
+    min-width: 100%;
+    z-index: 0s;
+
+}
+.wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.65;
+    z-index: 0;
 }
 
 .header {
     background: url(img/map.png);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.header__navbar {
 }
 
 .navbar {
@@ -30,9 +53,7 @@ ul {
     padding-top: 27px;
     padding-left: 46px;
     padding-right: 46px;
-    position: sticky;
-    top: 0;
-    
+    z-index: 0;
 }
 
 .logo {
@@ -45,17 +66,17 @@ ul {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    
-    
+    z-index: 0;
 }
 
 .logo__icon {
     transform: translateY(6px);
     margin-right: 8px;
+    z-index: 0;
 }
 
 .download__but {
-    
+    z-index: 0;
 }
 
 .android__but {
@@ -67,7 +88,7 @@ ul {
     border-radius: 30%;
     vertical-align: middle;
     cursor: pointer;
-    
+    z-index: 0;
 }
 
 .ios__but {
@@ -79,7 +100,7 @@ ul {
     border-radius: 30%;
     vertical-align: middle;
     cursor: pointer;  
-    margin-left: 20px;  
+    margin-left: 20px; 
 }
 
 .warp {
@@ -484,24 +505,25 @@ ul {
   
   .a {
     width: 23.96%;
-    height: 334px;
+    padding-bottom: 15px;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='29' ry='29' stroke='white' stroke-width='2' stroke-dasharray='16%2c 8' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e"), url(img/bg-lady.png);
     border-radius: 29px;
-
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
   }
   
   .b {
     width: 33%;
-    height: 160px;
+    padding-bottom: 15px;
     background-color: #120E2A;
   }
   
   .c {
     width: 33%;
-    height: 160px;
+    padding-bottom: 15px;
     background-color: #120E2A;
     margin-right: -16px;
-
   }
   
   .break {
@@ -512,9 +534,8 @@ ul {
   
   .d {
     width: calc(66% + 20px);
-    height: 160px;
+    padding-bottom: 15px;
     background-color: #120E2A;
-    
   }
 
 /* CITYS */
@@ -574,7 +595,7 @@ ul {
 }
 
 .citys__cards_picture {
-    transform: translateY(5px);
+    vertical-align: middle;
     margin-right: 4%;
     margin-left: 6.11%;
 }
@@ -841,13 +862,17 @@ ul {
 }
 
 .foother__top {
-    
+   
 }
 
 .foother__top_ul {
     display: flex; 
     justify-content: center;  
     padding-top: 34px;
+}
+
+.foother__top_li-pre {
+    transform: translateY(-13px);
 }
 
 .foother__top_li-first,
@@ -859,19 +884,23 @@ ul {
 
 .foother__h3 {
     padding-bottom: 4px;
+    color: #9D9CCA;
 }
 
 .foother__p_first {
     padding-bottom: 4px;
+    color: #3D3C7D;
+
 }
 
 .foother__p_three {
     padding-top: 4px;
     padding-bottom: 4px;
+    color: #3D3C7D;
 }
 
 .foother__bot {
-    padding-left: 54px;
+    padding-left: 15.5%;
     padding-bottom: 30px;
 }
 .foother__bot_ul {
@@ -882,4 +911,13 @@ ul {
 
 .foother__bot_li {
     margin-right: 32px;
+    
+}
+
+.foother__p_color {
+    color: #3D3C7D;
+}
+
+.foother__bot_color {
+    color: rgba(157, 156, 202, 0.2);
 }
